@@ -1,9 +1,9 @@
 package com.temp.wedding_secretary.models.domain;
 
+import com.temp.wedding_secretary.models.dictionaries.City;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import com.temp.wedding_secretary.models.dictionaries.City;
 
 @Data
 @ApiModel(description = "Заявка")

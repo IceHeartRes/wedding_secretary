@@ -18,4 +18,8 @@ public class SpecialistService {
     public List<Specialist> getSpecialists() {
         return specialistDao.getSpecilists();
     }
+
+    public Boolean updateSpecilist() {
+        return specialistDao.updateSpecilist();
+    }
 }

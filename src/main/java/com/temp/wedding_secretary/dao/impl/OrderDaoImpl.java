@@ -23,13 +23,13 @@ public class OrderDaoImpl implements OrderDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Autowired
-    public void setOrders(@Value("classpath:scripts/dao/orders_select.sql") InputStream sqlStream) throws IOException {
-        this.ordersSql = IOUtils.toString(sqlStream);
-    }
-
     @Override
     public List<Order> getOrders() {
         return jdbcTemplate.query(ordersSql, new OrderMapper());
+    }
+
+    @Autowired
+    public void setOrders(@Value("classpath:scripts/dao/orders_select.sql") InputStream sqlStream) throws IOException {
+        this.ordersSql = IOUtils.toString(sqlStream);
     }
 }

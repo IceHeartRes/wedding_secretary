@@ -7,7 +7,6 @@ import org.springframework.lang.Nullable;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.List;
 
 public class ArticleMapper implements RowMapper<Article> {
 
@@ -18,8 +17,8 @@ public class ArticleMapper implements RowMapper<Article> {
         article.setTitle(resultSet.getString(Columns.TITLE));
         article.setPreview(resultSet.getString(Columns.PREVIEW));
         article.setText(resultSet.getString(Columns.TEXT));
-        article.setImages((List<Object>) resultSet.getArray(Columns.IMAGES));
-        article.setIcon(resultSet.getObject(Columns.ICON));
+        article.setIconLink(resultSet.getString(Columns.ICON_LINK));
+        article.setCode(resultSet.getString(Columns.CODE));
         return article;
     }
 }

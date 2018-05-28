@@ -4,8 +4,8 @@ public interface Columns {
     String TITLE = "title";
     String PREVIEW = "preview";
     String TEXT = "text";
-    String IMAGES = "images";
-    String ICON = "icon";
+    String IMAGES = "imageLinks";
+    String ICON_LINK = "icon_link";
 
     String NAME = "name";
     String EMAIL = "email";
@@ -13,11 +13,13 @@ public interface Columns {
     String PARTITION = "partition";
 
     String DESCRIPTION = "description";
-    String CONTACTS = "contacts";
-    String PHOTES = "photes";
-    String VIDEO_LINKS = "video_links";
+    String TYPE = "type";
 
     String CODE = "code";
     String CITY_NAME = "city_name";
     String TIME_ZONE_OFFSET = "time_zone_offset";
+
+    String PROFESSIONAL_CATEGORY_NAME = "professional_category_name";
+    String PROFESSIONAL_CATEGORY_DISCRIPTION = "professional_category_discription";
+
 }

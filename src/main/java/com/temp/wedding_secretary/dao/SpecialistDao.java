@@ -12,4 +12,12 @@ public interface SpecialistDao {
      * @return возвращает список сущностей с данными
      */
     List<Specialist> getSpecilists();
+
+    /**
+     * обновить данные для сущности "Специалист"
+     *
+     * @return возвращает результат операции
+     */
+    Boolean updateSpecilist();
+
 }
