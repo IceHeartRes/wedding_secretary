@@ -6,6 +6,7 @@ public interface Columns {
     String TEXT = "text";
     String IMAGES = "imageLinks";
     String ICON_LINK = "icon_link";
+    String SPECIALIST_CODE = "specialist_code";
 
     String NAME = "name";
     String EMAIL = "email";
@@ -17,9 +18,21 @@ public interface Columns {
 
     String CODE = "code";
     String CITY_NAME = "city_name";
+    String CITY_CODE = "city_name";
     String TIME_ZONE_OFFSET = "time_zone_offset";
 
     String PROFESSIONAL_CATEGORY_NAME = "professional_category_name";
-    String PROFESSIONAL_CATEGORY_DISCRIPTION = "professional_category_discription";
+    String PROFESSIONAL_CATEGORY_CODE = "professional_category_code";
+    String PROFESSIONAL_CATEGORY_DESCRIPTION = "professional_category_description";
+
+    String PHOTO_LINK = "photo_link";
+    String VIDEO_LINK = "video_link";
+
+    String CATEGORY = "category";
+    String CONTACTS = "contacts";
+    String PHOTO = "photo";
+    String VIDEO_LINKS = "video_links";
+    String CITY = "city";
+    String ICON_LINKS = "icon_links";
 
 }

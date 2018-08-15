@@ -16,7 +16,7 @@ public class OrderMapper implements RowMapper<Order> {
         Order order = new Order();
 
         City city = new City();
-        city.setCode(resultSet.getString(Columns.CODE));
+        city.setCode(resultSet.getString(Columns.CITY_CODE));
         city.setName(resultSet.getString(Columns.CITY_NAME));
         city.setTimeZoneOffset(resultSet.getInt(Columns.TIME_ZONE_OFFSET));
 
@@ -25,6 +25,7 @@ public class OrderMapper implements RowMapper<Order> {
         order.setName(resultSet.getString(Columns.NAME));
         order.setPartition(resultSet.getString(Columns.PARTITION));
         order.setPhone(resultSet.getString(Columns.PHONE));
+        order.setCode(resultSet.getString(Columns.CODE));
         return order;
     }
 }

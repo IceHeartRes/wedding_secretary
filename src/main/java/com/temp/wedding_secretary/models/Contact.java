@@ -1,10 +1,18 @@
 package com.temp.wedding_secretary.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
+@JsonSerialize
+@JsonDeserialize
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 @ApiModel(description = "Контакт")
 public class Contact {
 
@@ -17,7 +25,6 @@ public class Contact {
     @ApiModelProperty(value = "Описание", example = "+79998887766")
     private String description;
 
-    //TODO тут наверное 1 иконка
     @ApiModelProperty(value = "Ссылка на иконку")
     private String iconLink;
 

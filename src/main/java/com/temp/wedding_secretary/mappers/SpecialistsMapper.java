@@ -19,8 +19,9 @@ public class SpecialistsMapper implements RowMapper<Specialist> {
         specialist.setCode(resultSet.getString(Columns.CODE));
 
         ProfessionalCategory professionalCategory = new ProfessionalCategory();
-        professionalCategory.setDescription(resultSet.getString(Columns.PROFESSIONAL_CATEGORY_DISCRIPTION));
+        professionalCategory.setDescription(resultSet.getString(Columns.PROFESSIONAL_CATEGORY_DESCRIPTION));
         professionalCategory.setName(resultSet.getString(Columns.PROFESSIONAL_CATEGORY_NAME));
+        professionalCategory.setCode(resultSet.getString(Columns.PROFESSIONAL_CATEGORY_CODE));
         specialist.setCategory(professionalCategory);
 
         return specialist;

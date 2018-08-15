@@ -3,7 +3,8 @@ SELECT
   o.email,
   o.partition,
   o.phone,
-  o.city_code AS code,
+  o.code,
+  o.city_code AS city_code,
   c.name      AS city_name,
   c.time_zone_offset
 FROM orders o

@@ -1,3 +1,3 @@
 SELECT p.photo_link
-FROM photes p
+FROM photo p
 WHERE p.specialist_code = :code;

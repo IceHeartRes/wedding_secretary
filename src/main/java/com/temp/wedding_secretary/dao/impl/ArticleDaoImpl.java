@@ -22,6 +22,7 @@ public class ArticleDaoImpl implements ArticleDao {
     private String articlesSql;
     private String imageLinksSql;
 
+    @Autowired
     public ArticleDaoImpl(NamedParameterJdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

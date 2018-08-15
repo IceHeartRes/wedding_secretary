@@ -14,10 +14,11 @@ public interface SpecialistDao {
     List<Specialist> getSpecilists();
 
     /**
-     * обновить данные для сущности "Специалист"
+     * обновить/вставить данные для сущности "Специалист"
      *
+     * @param request данные запроса
      * @return возвращает результат операции
      */
-    Boolean updateSpecilist();
+    Boolean updateSpecialist(Specialist request);
 
 }

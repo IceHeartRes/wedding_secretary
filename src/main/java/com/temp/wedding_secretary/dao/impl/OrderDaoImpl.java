@@ -19,6 +19,7 @@ public class OrderDaoImpl implements OrderDao {
     private final NamedParameterJdbcTemplate jdbcTemplate;
     private String ordersSql;
 
+    @Autowired
     public OrderDaoImpl(NamedParameterJdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

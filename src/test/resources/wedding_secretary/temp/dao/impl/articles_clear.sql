@@ -1,0 +1,2 @@
+TRUNCATE TABLE articles;
+TRUNCATE TABLE images;
